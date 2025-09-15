@@ -222,7 +222,7 @@ header {
 ================================ */
 
 .hero-section {
-    background: url(/img/about-us-hero-sec-bg.png) center center no-repeat;
+    background: url(img/about-us-hero-sec-bg.png) center center no-repeat;
     width: 1366px;
     height: 300px;
     display: flex;
@@ -295,7 +295,7 @@ header {
 }
 
 .about-us-upper-right {
-    background: url(/img/about-us-upper-right-img.png) center center /cover no-repeat;
+    background: url(img/about-us-upper-right-img.png) center center /cover no-repeat;
     height: 600px;
     width: 600px;
 }
@@ -308,7 +308,7 @@ header {
 }
 
 .about-us-bottom-left {
-    background: url(/img/about-us-bottom-left-img.png) center center /cover no-repeat;
+    background: url(img/about-us-bottom-left-img.png) center center /cover no-repeat;
     height: 600px;
     width: 600px;
     margin-top: -100px;

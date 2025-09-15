@@ -198,7 +198,7 @@ header {
 
 .hero-section {
   padding: 30px;
-  background: url(/img/Hero-Sec-BG.png) center center /cover no-repeat;
+  background: url(img/Hero-Sec-BG.png) center center /cover no-repeat;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -731,7 +731,7 @@ header {
 .projects-card-1,
 .projects-card-2 {
   padding: 12px;
-  background: url(/img/our-projects-sec-card-1-bg.png) center center /cover no-repeat;
+  background: url(img/our-projects-sec-card-1-bg.png) center center /cover no-repeat;
   width: 500px;
   height: 500px;
   display: flex;
@@ -747,17 +747,17 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background: url(/img/our-projects-sec-card-1-bg.png) center/cover no-repeat;
+  background: url(img/our-projects-sec-card-1-bg.png) center/cover no-repeat;
   transition: transform 0.4s ease;
   z-index: 0;
 }
 
 .projects-card-1 {
-  background: url(/img/our-projects-sec-card-2-bg.png) center center /cover no-repeat;
+  background: url(img/our-projects-sec-card-2-bg.png) center center /cover no-repeat;
 }
 
 .projects-card-1::before {
-  background: url(/img/our-projects-sec-card-2-bg.png) center center /cover no-repeat;
+  background: url(img/our-projects-sec-card-2-bg.png) center center /cover no-repeat;
 }
 
 .projects-card-1:hover::before,
@@ -945,7 +945,7 @@ header {
 .testimonials-myne {
   width: 1366px;
   padding: 12px;
-  background: url(/img/testimonials-bg.png) center center /cover no-repeat;
+  background: url(img/testimonials-bg.png) center center /cover no-repeat;
 }
 
 .right-quote {

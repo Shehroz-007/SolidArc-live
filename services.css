@@ -9,7 +9,7 @@
 }
 
 body {
-    /* cursor: url('/img/cursor.cur'), auto; */
+    /* cursor: url('img/cursor.cur'), auto; */
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
     background-color: #FFFFFF;
@@ -223,7 +223,7 @@ header {
 ================================ */
 
 .hero-section {
-    background: url(/img/about-us-hero-sec-bg.png) center center no-repeat;
+    background: url(img/about-us-hero-sec-bg.png) center center no-repeat;
     width: 1366px;
     height: 300px;
     display: flex;
@@ -266,7 +266,7 @@ header {
     align-items: center;
     flex-direction: column;
     width: 1366px;
-    background: url(/img/services_bg_man\ 1.png) center center /cover no-repeat;
+    background: url(img/services_bg_man\ 1.png) center center /cover no-repeat;
     padding: 30px;
 }
 
@@ -317,15 +317,15 @@ header {
 }
 
 .services-sec-2-card-1 {
-    background: url(/img/services-sec-2-cards-1-img.png) center center /cover no-repeat;
+    background: url(img/services-sec-2-cards-1-img.png) center center /cover no-repeat;
 }
 
 .services-sec-2-card-2 {
-    background: url(/img/services-sec-2-cards-2-img.png) center center /cover no-repeat;
+    background: url(img/services-sec-2-cards-2-img.png) center center /cover no-repeat;
 }
 
 .services-sec-2-card-3 {
-    background: url(/img/services-sec-2-cards-3-img.png) center center /cover no-repeat;
+    background: url(img/services-sec-2-cards-3-img.png) center center /cover no-repeat;
 }
 
 .services-sec-2-card {
@@ -548,51 +548,51 @@ header {
 }
 
 .card-img-1 {
-    background: url(/img/all-services-card-1.png) center center /cover no-repeat;
+    background: url(img/all-services-card-1.png) center center /cover no-repeat;
 }
 
 .card-img-2 {
-    background: url(/img/all-services-card-2.png) center center /cover no-repeat;
+    background: url(img/all-services-card-2.png) center center /cover no-repeat;
 }
 
 .card-img-3 {
-    background: url(/img/all-services-card-3.jpeg) center center /cover no-repeat;
+    background: url(img/all-services-card-3.jpeg) center center /cover no-repeat;
 }
 
 .card-img-4 {
-    background: url(/img/all-services-card-4.jpeg) center center /cover no-repeat;
+    background: url(img/all-services-card-4.jpeg) center center /cover no-repeat;
 }
 
 .card-img-5 {
-    background: url(/img/all-services-card-5.jpeg) center center /cover no-repeat;
+    background: url(img/all-services-card-5.jpeg) center center /cover no-repeat;
 }
 
 .card-img-6 {
-    background: url(/img/all-services-card-6.jpg) center center /cover no-repeat;
+    background: url(img/all-services-card-6.jpg) center center /cover no-repeat;
 }
 
 .card-img-7 {
-    background: url(/img/all-services-card-7.webp) center center /cover no-repeat;
+    background: url(img/all-services-card-7.webp) center center /cover no-repeat;
 }
 
 .card-img-8 {
-    background: url(/img/all-services-card-8.jpg) center center /cover no-repeat;
+    background: url(img/all-services-card-8.jpg) center center /cover no-repeat;
 }
 
 .card-img-9 {
-    background: url(/img/all-services-card-9.jpg) center center /cover no-repeat;
+    background: url(img/all-services-card-9.jpg) center center /cover no-repeat;
 }
 
 .card-img-10 {
-    background: url(/img/all-services-card-10.jpg) center center /cover no-repeat;
+    background: url(img/all-services-card-10.jpg) center center /cover no-repeat;
 }
 
 .card-img-11 {
-    background: url(/img/all-services-card-11.jpg) center center /cover no-repeat;
+    background: url(img/all-services-card-11.jpg) center center /cover no-repeat;
 }
 
 .card-img-12 {
-    background: url(/img/all-services-card-12.jpg) center center /cover no-repeat;
+    background: url(img/all-services-card-12.jpg) center center /cover no-repeat;
 }
 
 .all-services-card:hover {
