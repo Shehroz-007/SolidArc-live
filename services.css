@@ -1,0 +1,1106 @@
+/* ===============================
+   GLOBAL STYLES - START
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* cursor: url('/img/cursor.cur'), auto; */
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+}
+
+/* ---- Typography ---- */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/* ---- Custom Button ---- */
+.btn-custom {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background: #ff7c43;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+/* Sliding overlay */
+.btn-custom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* ✅ start from the right */
+    width: 0%;
+    background: wheat;
+    /* fill color */
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+
+/* Expand overlay on hover */
+.btn-custom:hover::before {
+    width: 100%;
+    left: auto;
+    right: 0;
+    /* ✅ let it expand towards the left */
+}
+
+/* Icon box */
+.btn-icon {
+    background: #FFFFFF;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin-left: 22px;
+    margin-right: -10px;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+/* Text + icon color on hover */
+.btn-custom:hover {
+    color: #ff7c43;
+}
+
+.btn-custom:hover .btn-icon {
+    background: #ff7c43;
+    color: #FFFFFF;
+}
+
+/* ---- Container ---- */
+.section-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---- <li> And <i> ---- */
+ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #545454;
+}
+
+
+/* ===============================
+   GLOBAL STYLES - END
+================================ */
+
+/* -------- Section Divider -------- */
+
+/* ===============================
+   HEADER - START
+================================ */
+
+header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    height: 80px;
+    width: 1366px;
+}
+
+.navbar {
+    width: 1366px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    margin: 0 50px;
+}
+
+.navbar li {
+    padding: 0 20px;
+}
+
+.nav-cta a {
+    padding: 10px;
+    background-color: #545454;
+    color: #EEEEEE;
+    /* border-radius: 6px; */
+    transition: all ease 0.3s;
+}
+
+.nav-cta a:hover {
+    background-color: #ff7c43;
+}
+
+/* Nav Links */
+.nav-links a {
+    position: relative;
+    /* needed for ::after */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #222831;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+    /* space for underline */
+}
+
+/* Create line */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    /* start at center */
+    bottom: 0;
+    transform: translateX(-50%);
+    /* center alignment */
+    width: 0;
+    /* hidden by default */
+    height: 2px;
+    /* line thickness */
+    background-color: #ff7c43;
+    /* underline color */
+    transition: width 0.3s ease;
+    /* smooth expand */
+}
+
+/* On hover → expand line from center */
+.nav-links a:hover::after {
+    width: 100%;
+    /* expand fully */
+}
+
+.nav-links a:hover {
+    color: #ff7c43;
+    /* change text color too */
+}
+
+/* ===============================
+   HEADER - END
+================================ */
+
+/* -------- Section Divider -------- */
+
+/* ===============================
+   HERO SECTION - START
+================================ */
+
+.hero-section {
+    background: url(/img/about-us-hero-sec-bg.png) center center no-repeat;
+    width: 1366px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.hero-section h1 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-section a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-section i {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+
+/* ===============================
+   HERO SECTION - END
+================================ */
+
+/* -------- Section Divider -------- */
+
+/* ===============================
+   services-sec-2  - START
+================================ */
+
+.services-sec-2 {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 1366px;
+    background: url(/img/services_bg_man\ 1.png) center center /cover no-repeat;
+    padding: 30px;
+}
+
+.services-sec-2 h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.services-sec-2>p {
+    color: rgba(0, 0, 0, 0.5);
+    width: 850px;
+    text-align: center;
+}
+
+.services-sec-2-cards-wrapper {
+    margin-top: 44px;
+    display: flex;
+    gap: 18px;
+
+}
+
+.services-sec-2-card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+}
+
+.services-sec-2-card i {
+    color: #ff7c43;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
+.services-sec-2-card h3 {
+    font-weight: 20px;
+    color: #FFFFFF;
+}
+
+.services-sec-2-card p {
+    text-align: center;
+    width: 340px;
+    font-size: 14px;
+}
+
+.services-sec-2-card-1 {
+    background: url(/img/services-sec-2-cards-1-img.png) center center /cover no-repeat;
+}
+
+.services-sec-2-card-2 {
+    background: url(/img/services-sec-2-cards-2-img.png) center center /cover no-repeat;
+}
+
+.services-sec-2-card-3 {
+    background: url(/img/services-sec-2-cards-3-img.png) center center /cover no-repeat;
+}
+
+.services-sec-2-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+}
+
+.services-sec-2-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(0deg,
+            transparent,
+            transparent 30%,
+            rgba(255, 124, 67, 0.3)
+            /* 🔥 use your accent color instead of cyan */
+        );
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.services-sec-2-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 124, 67, 0.5);
+}
+
+.services-sec-2-card:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+}
+
+/* ===============================
+   services-sec-2 - END
+================================ */
+
+/* -------- Section Divider -------- */
+
+/* ===============================
+   services-sec-3  - START
+================================ */
+
+.services-sec-3 {
+    width: 1366px;
+    height: 300px;
+}
+
+.services-sec-3-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 22px;
+}
+
+.services-sec-3-card {
+    width: 650px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    justify-content: space-between;
+}
+
+.services-sec-3-card-lhs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 70px;
+    color: #ff7c43;
+}
+
+.services-sec-3-card-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.services-sec-3-card-mid h3 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.services-sec-3-card-mid p {
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+}
+
+.services-sec-3-card-rhs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cards-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    margin-right: 8px;
+    background: transparent;
+    color: #ff7c43;
+    border: 2px solid #ff7c43;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color .35s ease;
+}
+
+/* Override Hover.css sweep fill color */
+.cards-tag::before {
+    background: #ff7c43 !important;
+}
+
+/* Change text color when hovered */
+.cards-tag:hover {
+    color: #fff;
+}
+
+.services-sec-3-card {
+    position: relative;
+    overflow: hidden;
+    background: #EEEEEE;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.services-sec-3-card::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 124, 67, 0.3),
+            transparent);
+    transform: rotate(25deg);
+    transition: all 0.6s ease;
+}
+
+.services-sec-3-card:hover {
+    background-color: #FFFFFF;
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.services-sec-3-card:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+/* ===============================
+   services-sec-3 - END
+================================ */
+
+/* -------- Section Divider -------- */
+
+/* ===============================
+   All-Services section  - START
+================================ */
+
+.all-services-card h3 {
+    margin: 10px 0;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.all-services-card p {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.all-services-card a {
+    padding: 10px 14px;
+    border: 1px solid #ff7c43;
+    text-decoration: none;
+    color: #ff7c43;
+    margin-bottom: 20px;
+}
+
+.all-services-card .hvr-bounce-to-bottom:before {
+    background: #ff7c43;
+}
+
+.all-services-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    height: 500px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+}
+
+.card-img-1 {
+    background: url(/img/all-services-card-1.png) center center /cover no-repeat;
+}
+
+.card-img-2 {
+    background: url(/img/all-services-card-2.png) center center /cover no-repeat;
+}
+
+.card-img-3 {
+    background: url(/img/all-services-card-3.jpeg) center center /cover no-repeat;
+}
+
+.card-img-4 {
+    background: url(/img/all-services-card-4.jpeg) center center /cover no-repeat;
+}
+
+.card-img-5 {
+    background: url(/img/all-services-card-5.jpeg) center center /cover no-repeat;
+}
+
+.card-img-6 {
+    background: url(/img/all-services-card-6.jpg) center center /cover no-repeat;
+}
+
+.card-img-7 {
+    background: url(/img/all-services-card-7.webp) center center /cover no-repeat;
+}
+
+.card-img-8 {
+    background: url(/img/all-services-card-8.jpg) center center /cover no-repeat;
+}
+
+.card-img-9 {
+    background: url(/img/all-services-card-9.jpg) center center /cover no-repeat;
+}
+
+.card-img-10 {
+    background: url(/img/all-services-card-10.jpg) center center /cover no-repeat;
+}
+
+.card-img-11 {
+    background: url(/img/all-services-card-11.jpg) center center /cover no-repeat;
+}
+
+.card-img-12 {
+    background: url(/img/all-services-card-12.jpg) center center /cover no-repeat;
+}
+
+.all-services-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* .all-services-card:hover .card-img {
+    transform: scale(1.1);
+} */
+
+/* ===============================
+   All-Services section - END
+================================ */
+
+/* -------- Section Divider -------- */
+
+/* ===============================
+   Pricing section  - START
+================================ */
+
+.pricing {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.pricing h2 {
+    font-size: 32px;
+    margin: 10px 0 30px;
+}
+
+/* Toggle Buttons */
+.toggle {
+    display: inline-flex;
+    background: #f3f2ef;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+.toggle button {
+    border: none;
+    background: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.toggle button.active {
+    background: #e9e6dd;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+/* Pricing Cards */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: left;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.plan-sub {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 36px;
+    color: #222;
+}
+
+.price span {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+}
+
+.pricing-card hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.pricing-card ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.pricing-card ul li {
+    margin: 8px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.pricing-card ul li::before {
+    content: "✔";
+    color: #ff7c43;
+    position: absolute;
+    left: 0;
+}
+
+.select-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #222;
+    border-radius: 6px;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.select-btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+/* Discount Badge */
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff7c43;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: none;
+    /* Hidden by default */
+}
+
+.yearly-active .badge {
+    display: inline-block;
+}
+
+/* ===============================
+   FOOTER - START
+================================ */
+
+footer {
+  width: 1366px;
+  background: #393E46;
+}
+
+
+
+
+/* Footer Upper */
+
+.footer-upper {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  margin-top: 26px;
+  padding: 24px;
+}
+
+.footer-upper-left {
+  display: flex;
+  gap: 20px;
+}
+
+/* Bell animation */
+@keyframes bell-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-10deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(-5deg);
+  }
+
+  70% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Apply to the bell icon */
+.footer-upper-left span:first-child i {
+  animation: bell-ring 2s infinite ease-in-out;
+  transform-origin: top center;
+  /* pivot from the top of the bell */
+}
+
+.footer-upper-left span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: #ff7c43;
+}
+
+.footer-upper-left span:first-child i {
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+.footer-upper-left span:last-child h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.footer-upper-left span:last-child p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-upper-right {
+  margin-top: 24px;
+}
+
+.email-box {
+  display: flex;
+  width: 400px;
+}
+
+.email-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.email-box button {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.email-box button:hover {
+  background: #ff7c43;
+}
+
+.footer-upper-hr {
+  z-index: 3;
+  display: flex;
+  justify-self: center;
+  width: 96%;
+  border: none;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.8;
+  border-radius: 2px;
+}
+
+
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+  padding: 24px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-bottom-left p {
+  margin: 26px 0;
+  color: #FFFFFF;
+  width: 440px;
+}
+
+.footer-bottom-left-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-bottom-left-social-icons div {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
+
+.footer-bottom-left-social-icons div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff7c43;
+  transition: top 0.4s ease;
+  z-index: 0;
+}
+
+.footer-bottom-left-social-icons div:hover::before {
+  top: 0;
+}
+
+.footer-bottom-left-social-icons div i {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.footer-bottom-left-social-icons div:hover i {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.footer-bottom-mid h3,
+.footer-bottom-right h3 {
+  margin-bottom: 30px;
+  color: #FFFFFF;
+}
+
+.footer-bottom-mid i,
+.footer-bottom-right i {
+  margin-right: 12px;
+}
+
+.footer-bottom-mid p,
+.footer-bottom-mid a,
+.footer-bottom-right p {
+  color: rgba(255, 255, 255, 0.5) !important;
+  text-decoration: none;
+  width: 300px;
+}
+
+.footer-bottom-mid a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-bottom-mid a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #ff7c43;
+  transition: width 0.3s ease;
+}
+
+.footer-bottom-mid a:hover::after {
+  width: 100%;
+}
+
+.footer-bottom-right i:hover {
+  color: #fff;
+  transition: all ease 0.4s;
+}
+
+.footer-bottom-right i {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  color: #ff7c43;
+  margin-right: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.footer-bottom-right i::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #ff7c43;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  z-index: -1;
+}
+
+.footer-bottom-right i:hover::after {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+
+/* Footer Copyright */
+
+.footer-copyright hr {
+  display: flex;
+  justify-self: center;
+  width: 100%;
+  border: none;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.8;
+  border-radius: 2px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-copyright p {
+  color: #FFFFFF;
+}
+
+.footer-copyright a {
+  color: #ff7c43;
+  font-style: none;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright b {
+  color: rgb(68, 172, 68);
+  font-style: none;
+}
